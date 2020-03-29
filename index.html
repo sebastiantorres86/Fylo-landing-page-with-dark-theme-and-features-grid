@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
+  <link rel="stylesheet" href="/primitive/src/scss/main.css">
+
   <script src="https://kit.fontawesome.com/6fa6438838.js" crossorigin="anonymous"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,17 +28,17 @@
       <a href="#Team">Team</a>
       <a href="#SignIn">Sign In</a>
     </nav>
-  </header>
+  </header><!--Header-->
   
   <section id="intro">
     <figure>
-      <img src="/images/illustration-intro.png" alt="">
+      <img class="responsive-image" src="/images/illustration-intro.png" alt="">
     </figure>
     <h1>All your files in one secure location, accessible anywhere.</h1>
     <p>Fylo stores all your most important files in one secure location. Access them wherever 
       you need, share and collaborate with friends family, and co-workers.</p>
     <button>Get Started</button>
-  </section> <!--Section Hero-->
+  </section> <!--Section Intro-->
 
   <section id="features">
     <div class="row">
@@ -121,36 +123,39 @@
   </section><!--Section Testimonials-->
   
   <section id="call-to-action">
-    <h2>Get early access today</h2>
+    <div class="card">
+      <h2>Get early access today</h2>
     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
       questions, our support team would be happy to help you.</p>
     <form action="">
       <input type="email" name="email" id="" placeholder="email@example.com">
       <button>Get Started For Free</button>
     </form>
-  </section>
+    </div>
+    
+  </section><!--Call to Action-->
 
   <footer>
     <figure>
       <img src="/images/logo.svg" alt="">
     </figure>
-    <div class="row">
+    <div class="footer-grid">
       <address class="location">
         <img src="/images/icon-location.svg" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-          dolore magna aliqua</p>
+          dolore magna aliqua</p> 
       </address>
-      <address>
+      <address class="phone-and-mail">
         <a href="tel:+1-543-123-4567"><img src="/images/icon-phone.svg" alt=""> +1-543-123-4567</a>
         <a href="mailto:example@fylo.com"><img src="/images/icon-email.svg" alt=""> example@fylo.com</a>
       </address>
-      <nav>
+      <nav class="links">
         <a href="#AboutUs">About Us</a>
         <a href="#Jobs">Jobs</a>
         <a href="#Press">Press</a>
         <a href="#Blog">Blog</a>
       </nav>
-      <nav>
+      <nav class="links">
         <a href="#ContactUs">Contact Us</a>
         <a href="#Terms">Terms</a>
         <a href="#Privacy">Privacy</a>
